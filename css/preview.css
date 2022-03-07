@@ -1,0 +1,300 @@
+body,
+html {
+    width: 100%;
+    overflow-x: hidden;
+    scroll-behavior: initial !important;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Concert One, cursive;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    width: 100%;
+    font-weight: 400;
+    font-style: normal;
+    color: #fff;
+    background-color: #0d0d0f;
+}
+.body-bg {
+    background-image: url(../index.htm);
+    background-size: 100% 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.8em;
+    letter-spacing: 0.105em;
+    color: #fff;
+    margin: 0 0 22px 0;
+    font-family: Concert One, cursive;
+}
+p:last-child {
+    margin-bottom: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 20px 0;
+    padding: 0;
+    font-weight: 700;
+    line-height: 1.21em;
+}
+
+h2 {
+    font-size: 60px;
+    margin: 0 0 22px;
+    text-transform: uppercase;
+    letter-spacing: 0.135em;
+}
+h3 {
+    font-size: 24px;
+}
+h4 {
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 0.18em;
+    margin-bottom: 10px;
+}
+h1:last-child,
+h2:last-child,
+h3:last-child,
+h4:last-child,
+h5:last-child,
+h6:last-child {
+    margin-bottom: 0;
+}
+a {
+    text-decoration: none !important;
+    outline: 0 !important;
+    color: #60cfff;
+    font-weight: 700;
+}
+a:hover {
+    color: #fff;
+}
+img {
+    max-width: initial
+}
+label {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1em;
+    text-transform: capitalize;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+
+#myVideo {
+    width: 100vw;
+    height: 105%;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: -30px;
+    bottom: 0;
+    z-index: -1;
+}
+
+/* Add some content at the bottom of the video/page */
+.content {
+width: 100%;
+text-align: center;
+}
+
+
+
+
+/* Style the button used to pause/play the video */
+#myBtn {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+#myBtn:hover {
+  background: #ddd;
+  color: black;
+}
+
+.page-footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+    font-family: Helvetica!important;
+
+}
+
+.page-footer p{
+
+    font-family: Helvetica!important;
+
+}
+
+.footer-bottom .container{
+    display: flex;
+}
+
+
+.social-media{
+    margin-left: auto;
+}
+
+.pic-wrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  margin: auto;
+  width: 50%;
+      height: 100vh;
+}
+
+
+.mySlides {
+    margin-bottom: 40px;
+}
+
+.mySlides img{
+    width : 600px;
+    height: 95px;
+    object-fit: cover;
+}
+
+
+.slideshow-container {
+
+  /*width: 90%;*/
+
+}
+
+.ban-top{
+    top: 0;
+position: inherit;
+}
+
+
+
+.content p{
+    color: #ff9400;
+}
+
+.ban-top p{
+    margin-top: 25px;
+color: #fff;
+  font-family: Helvetica!important
+
+}
+
+.footer-bottom .container{
+    max-width: initial;
+}
+
+@media (max-width: 1000px) {
+
+.slideshow-container {
+
+  width: 90%;
+
+}
+}
+
+.fade:not(.show) {
+  opacity:1;
+}
+/* Fading animation 
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: 1} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: 1} 
+  to {opacity: 1}
+}*/
+
+@media (max-width: 500px) {
+    .mySlides img{
+    width : 500px;
+}
+
+.slideshow-container p {
+    font-size: 16px;
+}
+.ban-top p {
+  margin-top: 55px;
+}
+.footer-bottom p {
+display:  none;}
+}
+
+
+@media (max-width: 400px) {
+    .mySlides img{
+    width : 400px;
+}
+
+.slideshow-container p {
+    font-size: 14px;
+}
+
+.footer-bottom p {
+  margin: auto 0;
+}
+.text-block-13{
+    font-size: 16px;
+}
+}
+@media (max-width: 373px) {
+.footer-bottom p {
+ font-size:  10px;
+}
+
+}
+@media (max-width: 350px) {
+    .mySlides img{
+    width : 350px;
+}
+
+.footer-bottom p {
+ font-size:  10px;
+}
+
+.slideshow-container p {
+    font-size: 12px;
+}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+@media (max-width: 290px) {
+.footer-bottom p {
+display:  none;}
+}
